@@ -1,0 +1,481 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*************COLORS*******************/
+/*    0072BB   FF4C3B FFD034 000000  C6C8CA FFFFFF
+
+        462066  FFB85F  FF7A5A  00AAA0  8ED2C9  FCF4D9
+
+*/
+/**********CUSTOM HEADINGS FOR POOERTFOLIO SERVICES AND ABOUT SECTION******/
+h3{
+    font-size: 4vw;
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-style: solid;
+}
+
+/**********CUSTOM HEADINGS FOR POOERTFOLIO SERVICES AND ABOUT SECTION******/
+/******************NAV BAR SECTION ****************/
+
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px 10px;
+    text-align: right;
+    }
+
+li {
+    display:inline;
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    color:#333;
+}
+
+#logo {
+    padding-left: 5%;
+}
+
+#navBar {
+    padding-right: 5%;
+}
+#navBar li a {
+    padding:15px 30px;
+}
+#navBar a:hover {
+    background: #FFD034;/*#ffc800;*/
+    border-radius: 30px 0px;
+/*    color:#fff;*/
+}
+
+.navigation {
+    width:100%;
+    margin-top:20px;
+    height:70px;
+}
+
+ #logo { 
+    width:10%;
+    float:left;
+ }
+#navBar{
+    float:right;
+    width:80%;
+ }
+
+.navigation:after {
+    clear:both;
+}
+
+
+/******************END OF NAV BAR SECTION ****************/
+
+/****************** SPLASH IMAGE *************************/
+.container {
+    background: url('../img/avic.jpg');
+    width:100%;
+    display:block;
+    overflow:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.overlay {
+    text-align:center;
+    padding: 14% 10%;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-size:4vw;
+    text-shadow: 2px 2px #0072BB;
+}
+
+.overlay h4 {
+    color: #fff;
+    font-size:2.5vw;
+    text-shadow: 1px 1px #0072BB;
+
+}
+/******************END OF SPLASH IMAGE *************************/
+
+/****************** ABOUT ME SECTION ***************************/
+#about {
+    display:block;
+    overflow:auto;
+    padding-bottom: 30px;
+}
+.row {
+    padding-bottom:20px;
+}
+
+.collumn2 { 
+    width:50%;
+    float:left;
+ }
+
+.collumn2:after {
+    clear: both;
+ }
+
+
+.collumnContainer {
+    max-width: 90%; 
+    text-align: left;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 100px;
+}
+#test {
+    text-align: center;
+}
+
+    /**************PROGRESS BAR**********************/
+    .myProgress {
+        width: 100%;
+        background-color: #9C8AA5;
+    }
+    #myBarJavascript {
+        width: 70%;
+        height: 30px;
+        background-color: #FFD034;
+    }
+    #myBarCss {
+        width: 70%;
+        height: 30px;
+        background-color: #FFD034;
+    }
+    #myBarHtml {
+        width: 70%;
+        height: 30px;
+        background-color: #FFD034;
+    }
+    #myBarDesign {
+        width: 70%;
+        height: 30px;
+        background-color: #FFD034;
+    }
+    #myBarVideo {
+        width: 70%;
+        height: 30px;
+        background-color: #FFD034;
+    }
+
+
+    /****************** END OF PROGRESS BAR *************************/
+
+/****************** END OF ABOUT ME SECTION *********************/
+
+/****************** SERVICES SECTION *********************/
+#services {
+    color:#FCF4D9;
+    display:block;
+    overflow:auto;
+    background-color: #00AAA0;
+    padding-top: 10px;
+    margin-bottom: -17px;
+}
+
+.collumn2 {
+    float:left;
+    width:50%;
+}
+.collumn2 p {
+    text-align: left;
+}
+#test {
+    text-align: center;
+    background-color: #00AAA0;
+    padding-bottom: 30px;
+
+}
+button {
+
+}
+/****************** END OF SERVICES SECTION *********************/
+/****************** REFERENCES SECTION *********************/
+
+#references {
+    display:block;
+    overflow:auto;
+    padding-bottom:30px;
+}
+}
+#references .row {
+ padding-left: 100px;
+ padding-right: 100px;
+}
+#references .column3 {
+  float:left;
+  width:33.333333%;
+}
+.collumnContainer {
+    max-width: 100%; 
+    text-align: left;
+    display: block;
+}
+.collumnContainer img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******************END OF REFERENCES SECTION *********************/
+/******************CONTACT ME ***********************/
+#contacts {
+    padding-top: 20px;
+    display:block;
+    overflow:auto;
+}
+
+#contacts .collumnContainer {
+	width:40%;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+}
+/******************END OF CONTACT ME ***********************/
+
+/******************FOOTER ***********************/
+#footer {
+	background-color: #222;
+    width:100%;
+}
+#footer .footer-container {
+    width:30%;
+    /*background-color: red;*/
+    margin:0 auto;
+}
+#footer img {
+    width:50px;
+    padding:5px 10px;
+    margin:0 auto;
+}
+
+/******************END OF FOOTER ***********************/
+
+
+
+/***************FOR SMALL SCREENS*****************/
+@media only screen and (max-width: 700px) {
+    h3{
+    font-size: 7vw;
+    }
+
+    /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
+    .container {
+        /*min-height: 200px;*/
+    }
+    .overlay h2 {
+        font-size:1.5em;
+        text-shadow: none;
+    }
+    .overlay h4 {
+        font-size:1em;
+        text-shadow: none;
+    }
+    /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
+    /************* SMALL SCREENS ABOUT ME SECTION ***********************/
+    #about {
+    	display:block;
+    	overflow:auto;
+    	padding-bottom:30px;
+	}
+    .rowCollumn {
+        background-color: red;
+                display:block;
+        overflow:auto;
+        padding-bottom:30px;
+    }
+    .collumn2 {
+        width:100%;
+    }
+
+    /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
+    /************* SMALL SCREENS REFERENCE SECTION ***********************/
+
+    #references .column3 {
+      width:100%;
+}
+    /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
