@@ -7,15 +7,18 @@
 // 6. Then nav items should appear ontop of everything else._/
 
 var menu=document.getElementById('menu');
-var navItems=document.getElementById('navBar');
+var navBar=document.getElementById('navBar');
 function starting() {
 	menu.style.display='none';
-	navItems.style.display='block';
-
+	navBar.style.display='block';
+	return(menu.style.display);
 }
 
 function second(){
-
+	if (menu.style.display==='none') {
+		menu.style.display='block';
+		navBar.style.display='none';
+	}
 }
 
 
@@ -23,3 +26,7 @@ document.querySelector('#menu').addEventListener("click", function(){
 	console.log('hinm');
 	starting();
 });
+
+document.querySelector('#navBar').addEventListener("click", function(){
+	second();
+})
