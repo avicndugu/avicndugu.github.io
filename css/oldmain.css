@@ -1,3 +1,98 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+/*::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}*/
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/*hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}*/
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+/*.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}*/
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -9,13 +104,13 @@
 */
 /**********CUSTOM HEADINGS FOR POOERTFOLIO SERVICES AND ABOUT SECTION******/
 h3{
-    font-size: 4vw;
+    font-size: 3em;
     text-align: center;
     text-decoration-line: overline underline;
     text-decoration-style: solid;
 }
 
-/**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
+/**********CUSTOM HEADINGS FOR POOERTFOLIO SERVICES AND ABOUT SECTION******/
 /******************NAV BAR SECTION ****************/
 
 
@@ -61,7 +156,7 @@ li a{
     width:10%;
     float:left;
  }
-.navBars{
+#navBar{
     float:right;
     width:80%;
  }
@@ -70,21 +165,14 @@ li a{
     clear:both;
 }
 
-#menu {
-    display:none;
-    float:right;
-
-}
-
 
 /******************END OF NAV BAR SECTION ****************/
 
 /****************** SPLASH IMAGE *************************/
 .container {
-    background: url('../img/avic.jpg');
+    background: url('../img/avic.png');
     width:100%;
-    display:block;
-    overflow:auto;
+    height: 570px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -96,13 +184,13 @@ li a{
 
 .overlay h2 {
     color: #fff;
-    font-size:4vw;
+    font-size:3em;
     text-shadow: 2px 2px #0072BB;
 }
 
 .overlay h4 {
     color: #fff;
-    font-size:2.5vw;
+    font-size:2em;
     text-shadow: 1px 1px #0072BB;
 
 }
@@ -110,9 +198,7 @@ li a{
 
 /****************** ABOUT ME SECTION ***************************/
 #about {
-    display:block;
-    overflow:auto;
-    padding-bottom: 30px;
+    height:600px;
 }
 .row {
     padding-bottom:20px;
@@ -129,11 +215,11 @@ li a{
 
 
 .collumnContainer {
-    max-width: 90%; 
+    max-width: 80%; 
     text-align: left;
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     min-height: 100px;
 }
 #test {
@@ -179,8 +265,7 @@ li a{
 /****************** SERVICES SECTION *********************/
 #services {
     color:#FCF4D9;
-    display:block;
-    overflow:auto;
+    min-height:350px;
     background-color: #00AAA0;
     padding-top: 10px;
     margin-bottom: -17px;
@@ -206,23 +291,15 @@ button {
 /****************** REFERENCES SECTION *********************/
 
 #references {
-    display:block;
-    overflow:auto;
-    padding-bottom:30px;
-}
+    min-height: 500px;
 }
 #references .row {
  padding-left: 100px;
  padding-right: 100px;
 }
-#references .column3 {
+.column3 {
   float:left;
   width:33.333333%;
-}
-.collumnContainer {
-    max-width: 100%; 
-    text-align: left;
-    display: block;
 }
 .collumnContainer img {
   display: block;
@@ -235,8 +312,7 @@ button {
 /******************CONTACT ME ***********************/
 #contacts {
     padding-top: 20px;
-    display:block;
-    overflow:auto;
+    height:350px;
 }
 
 #contacts .collumnContainer {
@@ -268,11 +344,7 @@ button {
 
 
 /***************FOR SMALL SCREENS*****************/
-@media only screen and (max-width: 700px) {
-    h3{
-    font-size: 7vw;
-    }
-
+@media screen and (max-width: 770px) {
     /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
     .container {
         /*min-height: 200px;*/
@@ -280,63 +352,29 @@ button {
     .overlay h2 {
         font-size:1.5em;
         text-shadow: none;
-        z-index: 10;
     }
     .overlay h4 {
         font-size:1em;
         text-shadow: none;
-        z-index: 10px;
     }
-    #menu {
-        display:block;
-        float:right;
-    }
-    #menu img {
-        width:40px;
-        padding: 15px 15px;
-        float:right;
-    }
-    #navBar {
-        display:none;
-    }
-    #navBar li {
-    display:block;
-    margin:20px 0;
-    z-index: 20;
-    /*width: 10px;*/
-    /*padding:10px 0;*/
-    }
-    #navBar a:hover {
-    background:none;
-    }
-
     /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
     /************* SMALL SCREENS ABOUT ME SECTION ***********************/
-    #about {
-    	display:block;
-    	overflow:auto;
-    	padding-bottom:30px;
-	}
-    .rowCollumn {
-        /*background-color: red;*/
-        display:block;
-        overflow:auto;
-        padding-bottom:30px;
-    }
+    /*#about {
+    	min-height:1000px;
+	}*/
     .collumn2 {
         width:100%;
     }
 
     /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
     /************* SMALL SCREENS REFERENCE SECTION ***********************/
+    .column3 {
+        width:100%;
+    }
 
-    #references .column3 {
-      width:100%;
-}
     /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
 
 }
-
 
 /* ==========================================================================
    Helper classes

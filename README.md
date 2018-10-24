@@ -1,2 +1,2 @@
-# avicndugu.github.io
-Personal Portfolio
+# rebranding
+I am rewriting my portifolio website from scratch.
