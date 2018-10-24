@@ -1,10 +1,8 @@
 // 1. Query selector for menu icon clicked _/
 // 2. Changing menu button to hidden on click  _/
 // 3. Changing navbar items to show _/
-// 4. Giving menu icons a new class that changes the navbar items
-//    to show as one list. _/
-// 5. Hiding the nav items once one of them is clicked.
-// 6. Then nav items should appear ontop of everything else._/
+// 4. Hiding the nav items once any one of them is clicked. _/
+// 5. Then nav items should appear ontop of everything else._/
 
 var menu=document.getElementById('menu');
 var navBar=document.getElementById('navBar');

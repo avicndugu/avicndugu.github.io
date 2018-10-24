@@ -212,17 +212,18 @@ button {
 }
 }
 #references .row {
- padding-left: 100px;
- padding-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 #references .column3 {
-  float:left;
-  width:33.333333%;
+    float:left;
+    width:33.333333%;
 }
 .collumnContainer {
     max-width: 100%; 
     text-align: left;
     display: block;
+    padding:40px 10px;
 }
 .collumnContainer img {
   display: block;
@@ -310,7 +311,9 @@ button {
     margin:20px 0;
     text-align: left;
     }
-
+    #navBar a:hover {
+        background-color: #f3f3f3;
+    }
     /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
     /************* SMALL SCREENS ABOUT ME SECTION ***********************/
     #about {
@@ -330,10 +333,25 @@ button {
 
     /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
     /************* SMALL SCREENS REFERENCE SECTION ***********************/
-
+    .collumnContainer {
+        padding:10px 10px;
+    }
     #references .column3 {
       width:100%;
 }
+    
+    /************SMALL SCREEN CONTACTS SECTION***********************/
+    #contacts .collumn2 {
+        /*padding-left:0;*/
+        /*margin-left: 0;*/
+    }
+    #contacts .collumnContainer {
+        /*padding-left:0;*/
+        margin: 0 10px;
+    }
+
+    /************SMALL SCREEN CONTACTS SECTION***********************/
+   
     /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
 
 }
