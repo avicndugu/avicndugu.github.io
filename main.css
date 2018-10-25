@@ -146,27 +146,27 @@ li a{
         background-color: #9C8AA5;
     }
     #myBarJavascript {
-        width: 70%;
+        width: 65%;
         height: 30px;
         background-color: #FFD034;
     }
     #myBarCss {
-        width: 70%;
+        width: 75%;
         height: 30px;
         background-color: #FFD034;
     }
     #myBarHtml {
-        width: 70%;
+        width: 85%;
         height: 30px;
         background-color: #FFD034;
     }
     #myBarDesign {
-        width: 70%;
+        width: 60%;
         height: 30px;
         background-color: #FFD034;
     }
     #myBarVideo {
-        width: 70%;
+        width: 50%;
         height: 30px;
         background-color: #FFD034;
     }
@@ -200,7 +200,9 @@ li a{
 
 }
 button {
-
+    border:0;
+    padding:10px 15px;
+    background: #FFD034;
 }
 /****************** END OF SERVICES SECTION *********************/
 /****************** REFERENCES SECTION *********************/
