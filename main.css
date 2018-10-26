@@ -14,6 +14,9 @@ h3{
     text-decoration-line: overline underline;
     text-decoration-style: solid;
 }
+body{
+    margin:0;
+}
 
 /**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
 /******************NAV BAR SECTION ****************/
@@ -353,7 +356,14 @@ button {
     }
 
     /************SMALL SCREEN CONTACTS SECTION***********************/
-   
+    #footer .footer-container {
+    width:100%;
+    }
+    #footer img {
+        width:40px;
+        padding:5px;
+        /*display:inline;*/
+   }
     /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
 
 }
