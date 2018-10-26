@@ -108,15 +108,15 @@ li a{
 }
 
 .overlay h2 {
-    color: #222;
+    color: #f0f0f0;
     font-size:4vw;
-    text-shadow: 2px 2px #fff; /*#0072BB;*/
+    text-shadow: 2px 2px #000; /*#0072BB;*/
 }
 
 .overlay h4 {
-    color: #222;
+    color: #f0f0f0;
     font-size:2.5vw;
-    text-shadow: 1px 1px #fff;/*#0072BB;*/
+    text-shadow: 1px 1px #000;/*#0072BB;*/
 }
 /******************END OF SPLASH IMAGE *************************/
 
