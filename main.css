@@ -92,9 +92,12 @@ li a{
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .overlay {
     text-align:center;
     padding: 14% 10%;
+    background:blue;
+    opacity:0.1;
 }
 
 .overlay h2 {
