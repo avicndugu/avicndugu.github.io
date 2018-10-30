@@ -75,16 +75,17 @@ li a{
     width:100%;
     padding-top:20px;
     height:70px;
+    background: #e5f6f5;
     position:relative;
 }
-#navCover{
+/*#navCover{
     position:absolute;
     top:0;
     left:0;
     background: #00a99d;
     opacity:0.1;
     width:100%;
-    height:100%;
+    height:100%;*/
 }
 
  #logo { 
