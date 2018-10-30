@@ -9,13 +9,30 @@
 */
 /**********CUSTOM HEADINGS FOR POOERTFOLIO SERVICES AND ABOUT SECTION******/
 h3{
+    font-family: "Courier New", Courier, monospace;
     font-size: 4vw;
     text-align: center;
     text-decoration-line: overline underline;
     text-decoration-style: solid;
+    padding: 0;
 }
-body{
+
+body, div, .row{
     margin:0;
+}
+li {
+    font-family:Impact, Charcoal, sans-serif;
+    opacity:1;
+    color: red;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    /*font-family: "apercu", sans-serif;*/
+}
+button {
+    font-size: 18px;
+
 }
 
 /**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
@@ -56,8 +73,18 @@ li a{
 
 .navigation {
     width:100%;
-    margin-top:20px;
+    padding-top:20px;
     height:70px;
+    position:relative;
+}
+#navCover{
+    position:absolute;
+    top:0;
+    left:0;
+    background: #00a99d;
+    opacity:0.1;
+    width:100%;
+    height:100%;
 }
 
  #logo { 
@@ -97,7 +124,7 @@ li a{
     position:absolute;
     top:0%;
     left:0%;
-    background:blue;
+    background:#00a99d;
     opacity:0.1;
     width:100%;
     height:100%;
@@ -128,6 +155,7 @@ li a{
 }
 .row {
     padding-bottom:20px;
+    margin:0;
 }
 
 .collumn2 { 
@@ -193,9 +221,10 @@ li a{
     color:#FCF4D9;
     display:block;
     overflow:auto;
-    background-color: #00AAA0;
-    padding-top: 10px;
-    margin-bottom: -17px;
+    background-color: #00a99d;
+    ;
+    /*padding-top: 10px;*/
+    /*margin-bottom: -17px;*/
 }
 
 .collumn2 {
@@ -205,14 +234,21 @@ li a{
 .collumn2 p {
     text-align: left;
 }
-#test {
+#test p {
+    margin:0;
+}
+#test  {
     text-align: center;
+    color:#ffffff;
+    /*margin:10px;*/
     background-color: #00AAA0;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
+    /*margin:0;*/
 
 }
 button {
     border:0;
+    margin-top: 20px;
     padding:10px 15px;
     background: #FFD034;
 }
@@ -251,8 +287,8 @@ button {
     position:absolute;
     top:0%;
     left:0%;
-    background:blue;
-    opacity:0.01;
+    background:#00a99d;
+    opacity:0.0001;
     width:100%;
     height:100%;
 }
