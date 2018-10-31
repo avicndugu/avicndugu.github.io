@@ -120,7 +120,7 @@ li a{
     /*height:auto;*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top top;
+    background-position: left center;
     /*position: relative;*/
 }
 .container {
