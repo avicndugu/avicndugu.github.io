@@ -114,14 +114,14 @@ li a{
 .background {
     background: url('../img/avic.jpg');
     width:100%;
-    height:30vw;
+    height:100%;
     display:block;
     overflow:none;
     /*height:auto;*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left center;
-    /*position: relative;*/
+    background-position: center center;
+    position: relative;
 }
 .container {
     position:absolute;
