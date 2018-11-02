@@ -52,7 +52,9 @@ li {
 li a{
     text-decoration: none;
     text-align: center;
-    color:#333;
+    color:#912cee;
+    border:solid 3px #912cee;
+    border-radius: 40px 0px;
 }
 
 #logo {
@@ -66,8 +68,9 @@ li a{
     padding:15px 30px;
 }
 #navBar a:hover {
-    background: #FFD034;/*#ffc800;*/
-    border-radius: 30px 0px;
+    background:#912cee;
+    color: #fff;/*#ffc800;*/
+    /*border-radius: 30px 0px;*/
 /*    color:#fff;*/
 }
 
@@ -75,7 +78,8 @@ li a{
     width:100%;
     padding-top:20px;
     height:70px;
-    background:#00a99d; /*#e5f6f5*/
+    background:#fff; /*#e5f6f5*/
+    padding-bottom:20px;
     /*position:relative;*/
 }
 /*#navCover{
@@ -112,7 +116,7 @@ li a{
 
 /****************** SPLASH IMAGE *************************/
 .background {
-    background: url('../img/avic.jpg');
+    background: url('./img/avic.jpg');
     width:100%;
     height:100%;
     display:block;
@@ -184,9 +188,7 @@ li a{
     margin-right: 5%;
     min-height: 100px;
 }
-#test {
-    text-align: center;
-}
+
 
     /**************PROGRESS BAR**********************/
     .myProgress {
@@ -232,7 +234,7 @@ li a{
     background-color:#912CEE;/* #00a99d;*/
     padding-bottom: 100px;
     /*padding-top: 10px;*/
-    margin-bottom: -8%;
+    margin-bottom: -7.5%;
 }
 
 .collumn2 {
@@ -243,12 +245,12 @@ li a{
     text-align: left;
     /*margin-bottom: 30px;*/
 }
-#test p {
+#call-to-action p {
     margin:0;
     text-align: center;
 
 }
-#test{
+#call-to-action{
     padding-top:50px;
     width:80%;
     margin:0 auto;
@@ -257,8 +259,8 @@ li a{
     padding-bottom: 50px;
     border:solid 1px #ccc;
     border-radius: 20px;
+    text-align: center;
 }
-
 button {
     border:0;
     margin-top: 20px;
@@ -309,13 +311,13 @@ button {
 }*/
 .text-over {
     position:absolute;
-    top:5%;
+    top:10%;
     left:0%;
     background:#222;/*#00a99d;*/
     opacity:0;
     width:100%;
-    height:90%;
-    z-index: 11;
+    height:80%;
+    /*z-index: 11;*/
 }
 .text-over h4 {
     color:#fff;
@@ -370,24 +372,17 @@ button {
 
 
 /***************FOR SMALL SCREENS*****************/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
     h3{
     font-size: 7vw;
     }
 
-    /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
-    .container {
-        /*min-height: 200px;*/
-    }
-    .overlay h2 {
-        font-size:1.5em;
-        text-shadow: none;
-        /*z-index: 21;*/
-    }
-    .overlay h4 {
-        font-size:1em;
-        text-shadow: none;
-        /*z-index: 2px;*/
+   /*************SMALL SCREENS NAVIGATION SECTION*************/
+ 
+    li a{
+   
+    border:none;
+    border-radius: 0;
     }
     #menu {
         display:block;
@@ -404,6 +399,7 @@ button {
         right:20px;
         display:none;
         background-color:#f3f3f3;
+        z-index: 10;
         /*width: 100px;*/
     }
     #navBar li {
@@ -412,14 +408,34 @@ button {
     text-align: left;
     }
     #navBar a:hover {
-        background-color: #f3f3f3;
+        color:#f3f3f3;
+        background-color: #912cee;
     }
+
+   /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
+ 
+    /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
+    .container {
+        /*min-height: 200px;*/
+    }
+    .overlay h2 {
+        font-size:1.5em;
+        text-shadow: none;
+        /*z-index: 21;*/
+    }
+    .overlay h4 {
+        font-size:1em;
+        text-shadow: none;
+        /*z-index: 2px;*/
+    }
+
     /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
     /************* SMALL SCREENS ABOUT ME SECTION ***********************/
     #about {
     	display:block;
     	overflow:auto;
     	padding-bottom:30px;
+        text-align: center;
 	}
     .rowCollumn {
         /*background-color: red;*/
@@ -430,16 +446,39 @@ button {
     .collumn2 {
         width:100%;
     }
+    .mobile-hide {
+        display:none;
+
+    }
 
     /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
+    /**************SMALL SCREEN SERVICES SECTION **************************/
+    #services {
+        margin-bottom: -15%;
+    }
+
     /************* SMALL SCREENS REFERENCE SECTION ***********************/
     .collumnContainer {
         padding:10px 10px;
     }
     #references .column3 {
       width:100%;
+    }
+    .text-over {
+        top:0%;
+        left:0%;
+        width:100%;
+        height:100%;
+    }
+    .text-over h4 {
+        padding-top:20%;
+    }
+    .text-over button {
+        margin-left: 20%;
+        margin-right: 20%;
 }
-    
+
+    /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
     /************SMALL SCREEN CONTACTS SECTION***********************/
     #contacts .collumn2 {
         /*padding-left:0;*/
@@ -459,10 +498,7 @@ button {
         padding:5px;
         /*display:inline;*/
    }
-    /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
-
-}
-
+    
 
 /* ==========================================================================
    Helper classes
