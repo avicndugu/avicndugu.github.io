@@ -12,9 +12,10 @@ h3{
     font-family: "Courier New", Courier, monospace;
     font-size: 4vw;
     text-align: center;
-    text-decoration-line: overline underline;
-    text-decoration-style: solid;
+    text-decoration: overline underline  solid;
     padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 body, div, .row{
@@ -27,13 +28,17 @@ li {
 }
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     /*font-family: "apercu", sans-serif;*/
 }
 button {
     font-size: 18px;
-
+     border:0;
+    border-radius: 15px;
+    padding:10px 15px; 
 }
+h4 {
+    font-size: 20px;}
 
 /**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
 /******************NAV BAR SECTION ****************/
@@ -191,34 +196,36 @@ li a{
 
 
     /**************PROGRESS BAR**********************/
+#about-section-1 p {
+    margin:10px;
+}    
     .myProgress {
         width: 100%;
-        background-color: #9C8AA5;
+        background-color: #ddd;
+    }
+    .skill-length {
+        background-color: #DA70D6;
     }
     #myBarJavascript {
         width: 65%;
         height: 30px;
-        background-color: #FFD034;
+        
     }
     #myBarCss {
         width: 75%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarHtml {
         width: 85%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarDesign {
         width: 60%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarVideo {
         width: 50%;
         height: 30px;
-        background-color: #FFD034;
     }
 
 
@@ -241,7 +248,8 @@ li a{
     float:left;
     width:50%;
 }
-.collumn2 p {
+#services .collumn2 p {
+    margin:0;
     text-align: left;
     /*margin-bottom: 30px;*/
 }
@@ -261,13 +269,18 @@ li a{
     border-radius: 20px;
     text-align: center;
 }
-button {
-    border:0;
-    margin-top: 20px;
-    padding:10px 15px;
-    background: #FFD034;
-}
 
+#call-to-action button {
+    margin-top: 20px;
+    border:solid 4px #912CEE;
+    background:#912CEE;
+    color: #fff;
+}
+#call-to-action button:hover {
+    color: #912CEE;
+    border:solid 4px #912CEE;
+    background:#fff;
+}
 /****************** END OF SERVICES SECTION *********************/
 /****************** REFERENCES SECTION *********************/
 
@@ -276,10 +289,13 @@ button {
     overflow:auto;
     padding-bottom:30px;
 }
+#references h3 {
+    padding-bottom: 20px;
+    padding-top:30px;
 }
 #references .row {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #references .column3 {
     float:left;
@@ -317,21 +333,27 @@ button {
     opacity:0;
     width:100%;
     height:80%;
-    /*z-index: 11;*/
+    text-align: center;
 }
 .text-over h4 {
     color:#fff;
     text-align: center;
-    padding-top:30%;
+    padding-top:10%;
 }
 .text-over button {
-    margin-left: 25%;
-    margin-right: 25%;
+    border:solid 4px #912CEE;
+    background:none;
+    color: #fff;
+
+}
+.text-over button:hover {
+    border:solid 4px #912CEE;
+    background:#912CEE;
 }
 .text-over:hover {
-    /*z-index:2;*/
     opacity: 1;
 }
+    
 /*.over:hover {
     opacity:0.1;
 }*/
@@ -372,7 +394,7 @@ button {
 
 
 /***************FOR SMALL SCREENS*****************/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     h3{
     font-size: 7vw;
     }
@@ -399,6 +421,7 @@ button {
         right:20px;
         display:none;
         background-color:#f3f3f3;
+        border-radius:10px;
         z-index: 10;
         /*width: 100px;*/
     }
@@ -410,6 +433,8 @@ button {
     #navBar a:hover {
         color:#f3f3f3;
         background-color: #912cee;
+        border-radius:10px;
+
     }
 
    /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
@@ -432,10 +457,12 @@ button {
     /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
     /************* SMALL SCREENS ABOUT ME SECTION ***********************/
     #about {
+        color:#fff;
     	display:block;
     	overflow:auto;
-    	padding-bottom:30px;
+    	padding-bottom:0px;
         text-align: center;
+        background: #912CEE;
 	}
     .rowCollumn {
         /*background-color: red;*/
@@ -450,13 +477,20 @@ button {
         display:none;
 
     }
-
+    #about-section-1 {
+        color:#000;
+        padding-bottom: 20px;
+        background-color: #fff;
+    }
     /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
     /**************SMALL SCREEN SERVICES SECTION **************************/
     #services {
         margin-bottom: -15%;
     }
-
+    #call-to-action {
+        padding-left:10px;
+        padding-right:10px;
+    }
     /************* SMALL SCREENS REFERENCE SECTION ***********************/
     .collumnContainer {
         padding:10px 10px;
