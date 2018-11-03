@@ -2,10 +2,11 @@
 <html>
 
 <head>
-  <title></title>
+  <title>Avic Ndugu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -31,11 +32,11 @@ _________________________________________________________ -->
       </div> -->
       <div id="navBar">
         <ul>
-          <li><a href="#logo">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#references">Portfolio</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a href="#logo"><b>Home</b></a></li>
+          <li><a href="#about"><b>About</b></a></li>
+          <li><a href="#services"><b>Services</b></a></li>
+          <li><a href="#references"><b>Portfolio</b></a></li>
+          <li><a href="#contacts"><b>Contact</b></a></li>
         </ul>
       </div>
   </div>
@@ -46,7 +47,7 @@ _________________________________________________________ -->
 _________________________________________________________ -->
   <div class="splashRow">
     <div class="background">
-      <div class="container"></div>
+      <!-- <div class="container"></div> -->
         <div class="overlay">
           <h2>Hello, I am Avic Ndugu</h2>
           <h4>I use HTML and CSS to convert webpage designs into beautiful and efficient websites.</h4>
@@ -63,32 +64,33 @@ _________________________________________________________ -->
     <div class="rowCollumn">
       <div class="collumn2">
         <div class="collumnContainer">
-          <p>I am a front-end web developer and a graphic designer. I help you comeup with good looking websites and code them into the final product. I also customise HTML, CSS. Front end web design is a complex mix of design and code all wrapped into one which is really exciting.</p>
-          <p>As a graphic designer, I work with you to create a brand that resonate with your truly resonate with your audience. I design posters, banners and logos that memorable and eye catching.</p>
-          <p>I also watch TED talks. Lots of TED talks. It open source learning. I am supporter of open source tech and creative materials.</p>
+          <p>I am a front-end web developer and a graphic designer. I help you comeup with good looking websites and code them. I also customise HTML, CSS and Javascript websites.</p>
+          <p>Front end web development is a complex mix of design and code all wrapped into one. Both are key in making user-friendly websites.</p>
+          <p class="mobile-hide">As a graphic designer, I work with you to create a brand that resonate with your truly resonate with your audience. I design posters, banners and logos that memorable and eye catching.</p>
+          <p class="mobile-hide">I also watch TED talks. Lots of TED talks. It open source learning. I am supporter of open source tech and creative materials.</p>
         </div>
       </div>
-      <div class="collumn2">
+      <div class="collumn2" id="about-section-1">
         <div class="collumnContainer">
           <p>JAVASCRIPT</p>
           <div class="myProgress">
-            <div id="myBarJavascript"></div>
+            <div id="myBarJavascript" class="skill-length"></div>
           </div>
           <p>CSS/ CSS3</p>
           <div class="myProgress">
-            <div id="myBarCss"></div>
+            <div id="myBarCss" class="skill-length"></div>
           </div>
           <p>HTML/ HTML5</p>
           <div class="myProgress">
-            <div id="myBarHtml"></div>
+            <div id="myBarHtml" class="skill-length"></div>
           </div>
           <p>GRAPHIC DESIGN</p>
           <div class="myProgress">
-            <div id="myBarDesign"></div>
+            <div id="myBarDesign" class="skill-length"></div>
           </div>
           <p>VIDEO EDITING</p>
           <div class="myProgress">
-            <div id="myBarVideo"></div>
+            <div id="myBarVideo" class="skill-length"></div>
           </div>
         </div>
       </div>
@@ -115,9 +117,11 @@ _________________________________________________________ -->
         </div>
       </div>
     </div>
-    <div id="test" class="row">
-      <p>Would you like to know more or just discuss something?</p>
-      <a href="img/Avic-Ndugu-full-CV.pdf" download="Avic Ndugu CV.pdf"><button><b>Download CV</b></button></a>
+    <div id="call-to-action" class="row">
+      <!-- <div class="collumnContainer"> -->
+        <p>Would you like to know more or just discuss something?</p>
+        <a href="img/Avic-Ndugu-full-CV.pdf" download="Avic Ndugu CV.pdf"><button><b>Download CV</b></button></a>
+      <!-- </div> -->
     </div>
   </div>
         <!-- *** SERVICES END *** -->
@@ -126,23 +130,35 @@ _________________________________________________________ -->
 _________________________________________________________ -->
 
   <div id="references">
-    <h3>MY PORTFOLIO </h3>
+    <h3>RECENT WORKS</h3>
     <div class="row">
       <div class="column3">
         <div class="collumnContainer">
-        	<a href="https://www.avicndugu.com"><div class="over"> </div></a>
+          <div class="text-over">
+            <h4>WEBSITE PROJECTS</h4>
+            <a href="https://www.avicndugu.com"><button><b>Visit website ></b></button></a>
+          </div>
+        	<div class="over"> </div></a>
         	<img src="img/portfolio-1.jpg">
         </div>
       </div>
       <div class="column3">
         <div class="collumnContainer">
-        	<a href="#"><div class="over"> </div></a>
+          <div class="text-over">
+            <h4>POSTER DESIGN PROJECT</h4>
+            <a href="https://www.behance.net/gallery/65217609/Posters"><button><b>Visit website ></b></button></a>
+          </div>
+        	<div class="over"> </div>
         	<img src="img/portfolio-2.jpg">
         </div>
       </div>
       <div class="column3">
         <div class="collumnContainer">
-        	<a href="#"><div class="over"> </div></a>
+          <div class="text-over">
+            <h4>PHOTOGRAPHY PROJECT</h4>
+            <a href="https://www.behance.net/gallery/65386559/Photography"><button><b>Visit website ></b></button></a>
+            </div>
+        	<div class="over"> </div>
 	        <img src="img/portfolio-3.jpg">
         </div>
       </div>
@@ -151,20 +167,31 @@ _________________________________________________________ -->
     <div class="row">
       <div class="column3">
         <div class="collumnContainer">
+          <div class="text-over">
+            <h4>VIDEO EDITING PROJECTS</h4>
+            <button><b>Visit website ></b></button></div>
     		<a href="#"><div class="over"> </div></a>
 	        <img src="img/portfolio-4.jpg">
         </div>
       </div>
       <div class="column3">
         <div class="collumnContainer">
-    	    <a href="#"><div class="over"> </div></a>
-    		<img src="img/portfolio-5.jpg">
+          <div class="text-over">
+            <h4>GAME DEVELOPMENT</h4>
+             <a href="https://avicndugu.github.io/rpc/"><button><b>Visit website ></b></button></a>
+           </div>
+    	    <div class="over"> </div>
+    		<img src="img/game-6.png">
         </div>
       </div>
       <div class="column3">
         <div class="collumnContainer">
-        	<a href="#"><div class="over"> </div></a>
-        	<img src="img/game-6.png">
+          <div class="text-over">
+            <h4>CARDS & LOGO DESIGN</h4>
+            <a href="https://www.behance.net/gallery/65042425/Logos"><button><b>Visit website ></b></button></a>
+          </div>
+        	<div class="over"> </div>
+        	<img src="img/businesscard.png">
         </div>
       </div>
     </div>

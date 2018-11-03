@@ -12,9 +12,10 @@ h3{
     font-family: "Courier New", Courier, monospace;
     font-size: 4vw;
     text-align: center;
-    text-decoration-line: overline underline;
-    text-decoration-style: solid;
+    text-decoration: overline underline  solid;
     padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 body, div, .row{
@@ -27,13 +28,17 @@ li {
 }
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     /*font-family: "apercu", sans-serif;*/
 }
 button {
     font-size: 18px;
-
+     border:0;
+    border-radius: 15px;
+    padding:10px 15px; 
 }
+h4 {
+    font-size: 20px;}
 
 /**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
 /******************NAV BAR SECTION ****************/
@@ -52,7 +57,9 @@ li {
 li a{
     text-decoration: none;
     text-align: center;
-    color:#333;
+    color:#912cee;
+    border:solid 3px #912cee;
+    border-radius: 40px 0px;
 }
 
 #logo {
@@ -66,8 +73,9 @@ li a{
     padding:15px 30px;
 }
 #navBar a:hover {
-    background: #FFD034;/*#ffc800;*/
-    border-radius: 30px 0px;
+    background:#912cee;
+    color: #fff;/*#ffc800;*/
+    /*border-radius: 30px 0px;*/
 /*    color:#fff;*/
 }
 
@@ -75,8 +83,9 @@ li a{
     width:100%;
     padding-top:20px;
     height:70px;
-    background: #e5f6f5;
-    position:relative;
+    background:#fff; /*#e5f6f5*/
+    padding-bottom:20px;
+    /*position:relative;*/
 }
 /*#navCover{
     position:absolute;
@@ -184,39 +193,39 @@ li a{
     margin-right: 5%;
     min-height: 100px;
 }
-#test {
-    text-align: center;
-}
+
 
     /**************PROGRESS BAR**********************/
+#about-section-1 p {
+    margin:10px;
+}    
     .myProgress {
         width: 100%;
-        background-color: #9C8AA5;
+        background-color: #ddd;
+    }
+    .skill-length {
+        background-color: #DA70D6;
     }
     #myBarJavascript {
         width: 65%;
         height: 30px;
-        background-color: #FFD034;
+        
     }
     #myBarCss {
         width: 75%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarHtml {
         width: 85%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarDesign {
         width: 60%;
         height: 30px;
-        background-color: #FFD034;
     }
     #myBarVideo {
         width: 50%;
         height: 30px;
-        background-color: #FFD034;
     }
 
 
@@ -229,36 +238,48 @@ li a{
     color:#FCF4D9;
     display:block;
     overflow:auto;
-    background-color: #00a99d;
-    ;
+    background-color:#912CEE;/* #00a99d;*/
+    padding-bottom: 100px;
     /*padding-top: 10px;*/
-    /*margin-bottom: -17px;*/
+    margin-bottom: -7.5%;
 }
 
 .collumn2 {
     float:left;
     width:50%;
 }
-.collumn2 p {
-    text-align: left;
-}
-#test p {
+#services .collumn2 p {
     margin:0;
+    text-align: left;
+    /*margin-bottom: 30px;*/
 }
-#test  {
+#call-to-action p {
+    margin:0;
     text-align: center;
-    color:#ffffff;
-    /*margin:10px;*/
-    background-color: #00AAA0;
-    /*padding-bottom: 30px;*/
-    /*margin:0;*/
 
 }
-button {
-    border:0;
+#call-to-action{
+    padding-top:50px;
+    width:80%;
+    margin:0 auto;
+    color:#000;
+    background-color: #fff;
+    padding-bottom: 50px;
+    border:solid 1px #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#call-to-action button {
     margin-top: 20px;
-    padding:10px 15px;
-    background: #FFD034;
+    border:solid 4px #912CEE;
+    background:#912CEE;
+    color: #fff;
+}
+#call-to-action button:hover {
+    color: #912CEE;
+    border:solid 4px #912CEE;
+    background:#fff;
 }
 /****************** END OF SERVICES SECTION *********************/
 /****************** REFERENCES SECTION *********************/
@@ -268,10 +289,13 @@ button {
     overflow:auto;
     padding-bottom:30px;
 }
+#references h3 {
+    padding-bottom: 20px;
+    padding-top:30px;
 }
 #references .row {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #references .column3 {
     float:left;
@@ -291,18 +315,48 @@ button {
   margin-right: auto;
 }
 
-.over {
+/*.over {
     position:absolute;
-    top:0%;
+    top:5%;
     left:0%;
     background:#00a99d;
-    opacity:0.0001;
-    width:100%;
-    height:100%;
-}
-.over:hover {
     opacity:0.5;
+    width:100%;
+    height:90%;
+    z-index: 10;
+}*/
+.text-over {
+    position:absolute;
+    top:10%;
+    left:0%;
+    background:#222;/*#00a99d;*/
+    opacity:0;
+    width:100%;
+    height:80%;
+    text-align: center;
 }
+.text-over h4 {
+    color:#fff;
+    text-align: center;
+    padding-top:10%;
+}
+.text-over button {
+    border:solid 4px #912CEE;
+    background:none;
+    color: #fff;
+
+}
+.text-over button:hover {
+    border:solid 4px #912CEE;
+    background:#912CEE;
+}
+.text-over:hover {
+    opacity: 1;
+}
+    
+/*.over:hover {
+    opacity:0.1;
+}*/
 /******************END OF REFERENCES SECTION *********************/
 /******************CONTACT ME ***********************/
 #contacts {
@@ -345,19 +399,12 @@ button {
     font-size: 7vw;
     }
 
-    /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
-    .container {
-        /*min-height: 200px;*/
-    }
-    .overlay h2 {
-        font-size:1.5em;
-        text-shadow: none;
-        /*z-index: 21;*/
-    }
-    .overlay h4 {
-        font-size:1em;
-        text-shadow: none;
-        /*z-index: 2px;*/
+   /*************SMALL SCREENS NAVIGATION SECTION*************/
+ 
+    li a{
+   
+    border:none;
+    border-radius: 0;
     }
     #menu-bar div {
             width: 35px;
@@ -390,6 +437,8 @@ button {
         right:20px;
         display:none;
         background-color:#f3f3f3;
+        border-radius:10px;
+        z-index: 10;
         /*width: 100px;*/
     }
     #navBar li {
@@ -398,14 +447,38 @@ button {
     text-align: left;
     }
     #navBar a:hover {
-        background-color: #f3f3f3;
+        color:#f3f3f3;
+        background-color: #912cee;
+        border-radius:10px;
+
     }
+
+   /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
+ 
+    /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
+    .container {
+        /*min-height: 200px;*/
+    }
+    .overlay h2 {
+        font-size:1.5em;
+        text-shadow: none;
+        /*z-index: 21;*/
+    }
+    .overlay h4 {
+        font-size:1em;
+        text-shadow: none;
+        /*z-index: 2px;*/
+    }
+
     /************* END OF SMALL SCREENS SPLASH IMAGE SECTION*************/
     /************* SMALL SCREENS ABOUT ME SECTION ***********************/
     #about {
+        color:#fff;
     	display:block;
     	overflow:auto;
-    	padding-bottom:30px;
+    	padding-bottom:0px;
+        text-align: center;
+        background: #912CEE;
 	}
     .rowCollumn {
         /*background-color: red;*/
@@ -416,16 +489,46 @@ button {
     .collumn2 {
         width:100%;
     }
+    .mobile-hide {
+        display:none;
 
+    }
+    #about-section-1 {
+        color:#000;
+        padding-bottom: 20px;
+        background-color: #fff;
+    }
     /************* END OF SMALL SCREENS ABOUT ME SECTION ***********************/
+    /**************SMALL SCREEN SERVICES SECTION **************************/
+    #services {
+        margin-bottom: -15%;
+    }
+    #call-to-action {
+        padding-left:10px;
+        padding-right:10px;
+    }
     /************* SMALL SCREENS REFERENCE SECTION ***********************/
     .collumnContainer {
         padding:10px 10px;
     }
     #references .column3 {
       width:100%;
+    }
+    .text-over {
+        top:0%;
+        left:0%;
+        width:100%;
+        height:100%;
+    }
+    .text-over h4 {
+        padding-top:20%;
+    }
+    .text-over button {
+        margin-left: 20%;
+        margin-right: 20%;
 }
-    
+
+    /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
     /************SMALL SCREEN CONTACTS SECTION***********************/
     #contacts .collumn2 {
         /*padding-left:0;*/
@@ -445,10 +548,7 @@ button {
         padding:5px;
         /*display:inline;*/
    }
-    /************* END OF SMALL SCREENS REFERENCE SECTION ***********************/
-
-}
-
+    
 
 /* ==========================================================================
    Helper classes
