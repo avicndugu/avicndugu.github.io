@@ -112,7 +112,7 @@ li a{
 
 /****************** SPLASH IMAGE *************************/
 .background {
-    background: url('../img/avic.jpg');
+    background: url('./img/avic.jpg');
     width:100%;
     height:100%;
     display:block;
@@ -359,7 +359,23 @@ button {
         text-shadow: none;
         /*z-index: 2px;*/
     }
-    #menu {
+    #menu-bar div {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+    #menu-bar {
+        /*padding-top:10px;*/
+        border:solid 1px black;
+        border-radius: 1px;
+        padding:5px 10px;
+        float:right;
+    }
+    #menu-bar:after {
+        clear: both;
+    }
+    /*#menu {
         display:block;
         float:right;
     }
@@ -367,7 +383,7 @@ button {
         width:40px;
         padding: 15px 15px;
         float:right;
-    }
+    }*/
     #navBar {
         position: fixed;
         top:20px;

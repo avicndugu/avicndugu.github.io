@@ -4,7 +4,7 @@
 // 4. Hiding the nav items once any one of them is clicked. _/
 // 5. Then nav items should appear ontop of everything else._/
 
-var menu=document.getElementById('menu');
+var menu=document.getElementById('menu-bar');
 var navBar=document.getElementById('navBar');
 function starting() {
 	menu.style.display='none';
@@ -20,8 +20,8 @@ function second(){
 }
 
 
-document.querySelector('#menu').addEventListener("click", function(){
-	console.log('hinm');
+document.querySelector('#menu-bar').addEventListener("click", function(){
+	// console.log('hinm');
 	starting();
 });
 
