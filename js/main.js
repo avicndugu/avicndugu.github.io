@@ -27,4 +27,4 @@ document.querySelector('#menu-bar').addEventListener("click", function(){
 
 document.querySelector('#navBar').addEventListener("click", function(){
 	second();
-})
+});

@@ -344,7 +344,16 @@ li a{
     border:solid 4px #912CEE;
     background:none;
     color: #fff;
-
+}
+.text-over i {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.text-over .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 .text-over button:hover {
     border:solid 4px #912CEE;
