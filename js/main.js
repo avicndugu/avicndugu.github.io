@@ -19,6 +19,9 @@ function second(){
 	}
 }
 
+// function goingUp() {
+	
+// }
 
 document.querySelector('#menu-bar').addEventListener("click", function(){
 	// console.log('hinm');
@@ -28,3 +31,6 @@ document.querySelector('#menu-bar').addEventListener("click", function(){
 document.querySelector('#navBar').addEventListener("click", function(){
 	second();
 });
+// document.querySelector('go-top').addEventListener("click", function(){
+// 	goingUp();
+// });
