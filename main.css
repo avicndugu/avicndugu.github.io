@@ -72,7 +72,7 @@ li a{
     float:left;
  }
 #logo img {
-    height:70px;
+    height:60px;
 }
 #navBar {
     padding-right: 5%;
@@ -90,9 +90,9 @@ li a{
 .navigation {
     width:100%;
     padding-top:20px;
-    height:70px;
+    height:60px;
     background:#fff; /*#e5f6f5*/
-    padding-bottom:20px;
+    padding-bottom:15px;
     /*position:relative;*/
 }
 /*#navCover{
