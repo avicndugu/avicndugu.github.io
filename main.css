@@ -129,51 +129,41 @@ li a{
 /******************END OF NAV BAR SECTION ****************/
 
 /****************** SPLASH IMAGE *************************/
-.background {
-    background: url('./img/avic.jpg');
+#splashRow {
+    position: relative;
+    width:100%;
+}
+#splashRow img {
     width:100%;
     height:100%;
-    display:block;
-    overflow:none;
-    /*height:auto;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
 }
-.container {
-    position:absolute;
+#splashRow .overlay {
+    position: absolute;
     top:0%;
     left:50%;
+    height:100%;
     width:50%;
-    height: 100%;
-    opacity:0.4;
-    background:#00a99d;
-    /*padding: 14% 10%;*/
-    color:#000;
-}
-.overlay {
-    position: relative;
-    text-align:center;
-    padding: 15% 10%;
+    /*background:blue;*/
+    padding-top:15%;
 }
 
 .overlay h2 {
     color: #f0f0f0;
     font-size:3vw;
+    text-align: center;
     text-shadow: 2px 2px #000; /*#0072BB;*/
-    padding-top: 30px;
+    /*padding:30px 5px;*/
 }
 
 .overlay h4 {
     color: #f0f0f0;
     font-size:2vw;
     text-shadow: 1px 1px #000;/*#0072BB;*/
-    /*padding:0 0 20px 0;*/
+    padding:0 20px 0 20px;
 }
-/******************END OF SPLASH IMAGE *************************/
+/******************END OF SPLASH IMAGE ************************
 
-/****************** ABOUT ME SECTION ***************************/
+/****************** ABOUT ME SECTION **************************/
 #about {
     display:block;
     overflow:auto;
@@ -204,7 +194,7 @@ li a{
 }
 
 
-    /**************PROGRESS BAR**********************/
+    /**************PROGRESS BAR*********************/
 #about-section-1 p {
     margin:10px;
 }    
@@ -441,13 +431,9 @@ li a{
 
 
 /***************FOR SMALL SCREENS*****************/
-@media only screen and (max-width: 700px) {
-    h3{
-    font-size: 7vw;
-    }
-
-   /*************SMALL SCREENS NAVIGATION SECTION*************/
+@media only screen and (max-width: 870px) {
  
+   /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
     li a{
    
     border:none;
@@ -500,6 +486,15 @@ li a{
     }
 
    /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
+}
+
+@media only screen and (max-width: 700px) {
+    h3{
+    font-size: 7vw;
+    }
+
+   /*************SMALL SCREENS NAVIGATION SECTION*************/
+
  
     /*************SMALL SCREENS SPLASH IMAGE SECTION*************/
     .container {
@@ -596,6 +591,12 @@ li a{
     padding:5px 10px;
 }
 
+
+@media only screen and (max-width: 532px) {
+    .overlay h4 {
+        display:none;
+    }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
