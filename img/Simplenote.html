@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html id="app-page" class="gr__app_simplenote_com" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta charset="utf-8">
+        <title>Simplenote</title>
+        <link href="Simplenote_files/jquery-ui-1.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="Simplenote_files/editor.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="Simplenote_files/dev.css" media="screen" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        <script type="text/javascript" async="" src="Simplenote_files/ga.js"></script><script type="text/javascript" src="Simplenote_files/simperium-0.js"></script>
+        <script type="text/javascript" src="Simplenote_files/notes-all-min.js"></script>
+        
+        <link href="Simplenote_files/print.css" media="print" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 64x64" href="https://app.simplenote.com/favicon.ico">
+        <script type="text/javascript">
+          var _query="",
+            _preview_lines="1",
+            _tab_support=true;
+          
+          var simperium_opts = {update_delay:1500, token:"6640f5b549b647aca4f11a46b9f99eda", username:"avic@tunapanda.org"};
+          
+          
+          var simplenote_app_id="chalk-bump-f49";
+          SN.log = function (){};
+        </script>
+
+    
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+
+    <script type="text/javascript" id="cookiebanner" src="Simplenote_files/cookiebanner.js" data-expires="15780000" data-fg="#FFFFFF" data-bg="#468ac5" data-close-text="Got it!" data-close-style="height:22px;font-weight:bold;float:right;text-decoration: underline;padding-left:5px;" data-link="#FFFFFF" data-linkmsg="Learn more, including how to control cookies." data-moreinfo="https://www.automattic.com/cookies" data-moreinfo-decoration="underline" data-message="Our websites and dashboards use cookies. By continuing, you agree to their use." data-on-closed="(instance) =&gt; { _gaq.push(['_trackEvent', 'Link', 'Click', 'Cookie got it link']); }">
+    </script>
+</head>
+<div class="gr-top-z-index gr-top-zero" tabindex="-1"><div class="_30JeG" style="transform: translate(1438.25px, 1058.75px);"><div class="_2A3ER"><div class="_1y1wn _2R8DE undefined"></div><div class="_24Em3"><div style="display: initial;"><div class="_21QaI _1L80j" tabindex="-1"></div></div></div><div class="_2-7o4"></div><div class="_24Em3"><div style="display: initial;"><div class="_21QaI _1pbTT" data-action="editor" tabindex="-1"></div></div></div></div></div></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"><div class="_30JeG" style="transform: translate(1507.25px, 1073.75px);"><div class="_2A3ER"><div class="_1y1wn _2R8DE undefined"></div><div class="_24Em3"><div style="display: initial;"><div class="_21QaI _1L80j" tabindex="-1"></div></div></div><div class="_2-7o4"></div><div class="_24Em3"><div style="display: initial;"><div class="_21QaI _1pbTT" data-action="editor" tabindex="-1"></div></div></div></div></div></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><body data-gr-c-s-loaded="true">
+    <div id="print_helper"></div>
+
+    <div class="wrapper">
+    <div class="app">
+
+    <div class="toolbar">
+        <input type="text" class="searchfield" autocomplete="off">
+    <span class="searchcancel" style="display:none"></span>
+        <ul class="left-tools">
+            <li><a href="" title="Add Note" class="add tbutton" style="visibility: visible;">Add</a></li>
+            <ul class="left-side-menu">
+              <li class="view-mode sn-rocker" id="view_mode_container" role="list" style="display: none;"><a class="button sn-rocker-option active" role="option" href="" title="Mode: Edit Note" id="view_mode_edit">Edit</a><a class="button sn-rocker-option" role="option" href="" title="Mode: Markdown Preview" id="view_mode_markdown">Preview</a>
+            </li>
+            </ul>
+        </ul>
+
+        <div class="header">
+            <div class="popover button inactive"><span id="user_account_menu">avic@tunapanda.org</span>
+                <div class="menu settingsmenu">
+                    <span class="tail"></span>
+                        <ul>
+                            <li><a href="https://app.simplenote.com/settings">Settings</a></li>
+                            <li><a id="signout" href="https://app.simplenote.com/logout">Sign Out</a>
+                            <form id="signoutform" action="/logout" method="POST" style="display:none">
+                                <input type="hidden" name="csrf_token" value="2120aeaee2eba967a23f1dfe571a65b050533fea7ae411c17f02ae4c1587d465">
+                            </form>
+                            </li>
+                            
+    <!--                         <li><a href="/settings">Upgrade to Premium</a></li>
+     -->                        
+                            <li style="position: relative"><a id="ziplink" href="">Download .zip</a>
+                            <img id="zipbusy" style="display:none;position:absolute;left:110px;top:-23px;" src="Simplenote_files/ajax-loader.gif"></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <ul class="tools">
+            <li><span title="Note info &amp; settings" class="info-btn tbutton" style="display: block;"></span></li>
+            <li><span title="Restore Note" class="restore tbutton" style="display: none;"></span></li>
+            <li class="popover"><span title="View Versions of this note" class="versions tbutton" style="display: block;"></span>
+                <div class="menu history">
+                    <span class="tail"></span>
+                    <h4>Version History</h4>
+                    <div class="versions-left fl">
+                    <div id="versions" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-disabled ui-disabled ui-state-disabled" aria-disabled="true"><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;" disabled="disabled"></a></div>
+                    </div>
+                    <div class="versions-right fr">
+                     <button class="version-restore button disabled">Restore</button>
+                    </div>
+                    <label id="versionlabel"><p>No versions</p></label>
+                </div>
+            </li>
+            <li><span title="Delete Note" class="delete tbutton" style="display: block;"></span></li>
+            <li class="popover sharemenu" style="display: block;"><span title="Share this note" class="share tbutton"></span>
+                <div class="menu sharepopover">
+                    <span class="tail"></span>
+                    <ul>
+                        <li><a href="" class="publishnote" style="display: block;">Publish…</a></li>
+                        <li><a href="" class="publishednote" style="display:none;">Published…</a></li>
+                        <li><a href="" class="sharenote">Share…</a></li>
+                        <li><a href="" class="cannotsharenote" style="display:none;"><em>Cannot re-share…</em></a></li>
+                        <li><a href="" class="emailnote">Send by Email…</a></li>
+                        <li><a href="" class="printnote">Print…</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div><!--/.toolbar-->
+
+        <div class="sidebar">
+
+                <ul class="sideview">
+                <li style="float:right;display:none" class="notecount">0 Notes</li>
+                    <li class="tagmenu button popover"><span id="tagmenu">Tags</span>
+                        <div class="menu tags">
+                            <h4>View by Tag</h4>
+                            <span class="tail"></span>
+                            <ul class="taglist"><li class="all-notes"><a class="all-notes-tag">All Notes</a><a class="allcount">33</a></li><li class="trash"><a class="trash-tag">Trash</a><a class="empty button">Empty</a></li><li><a href="">Melkizedek</a><a class="deleteTag">x</a></li></ul>
+                        </div>
+                        </li>
+                </ul>
+
+            <ul class="notes">
+        
+
+        
+            <li class="with-1-preview-lines selected"><div class="note-preview-title">littlebits.com/</div><p class="note-preview-line note-preview-line-1">https://kano.me/</p></li><li class="with-1-preview-lines"><div class="note-preview-title">JAVASCRIPT FREE CODE CAMP PROGRESS</div><p class="note-preview-line note-preview-line-1">21-11-2018</p></li><li class="with-1-preview-lines"><div class="note-preview-title">I finished the basic javascript section and here is what I learnt.</div><p class="note-preview-line note-preview-line-1">&nbsp;</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Crowdfunding energy</div><p class="note-preview-line note-preview-line-1">http://www.powergen-renewable-energy.com</p></li><li class="with-1-preview-lines"><div class="note-preview-title">ARTICLES LIST</div><p class="note-preview-line note-preview-line-1">1. How to create columns like a pro</p></li><li class="with-1-preview-lines"><div class="note-preview-title">WHEN TO USE BOOTSTRAP</div><p class="note-preview-line note-preview-line-1">Reach for Bootstrap when you need assistance implementing any of the following:</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">Javascript notes</div><p class="note-preview-line note-preview-line-1">Objects</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">Skills and knowledge needed for a Front-end web developer</div><p class="note-preview-line note-preview-line-1">1. HTML/CSS</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Services:</div><p class="note-preview-line note-preview-line-1">UI/UX Design</p></li><li class="with-1-preview-lines"><div class="note-preview-title">TunapandaNet deployment</div><p class="note-preview-line note-preview-line-1">PROJECT LEAD:</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Updates</div><p class="note-preview-line note-preview-line-1">### Checklist</p></li><li class="with-1-preview-lines"><div class="note-preview-title">The article on creating collumns like a pro</div><p class="note-preview-line note-preview-line-1">&nbsp;</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Reflection meeting minutes</div><p class="note-preview-line note-preview-line-1">Members present</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Media Queries</div><p class="note-preview-line note-preview-line-1">@media (min-height) {</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Plan</div><p class="note-preview-line note-preview-line-1">18th Oct 2018</p></li><li class="with-1-preview-lines"><div class="note-preview-title">|15-10-2018|Javascript interactivity| personal learning | Learning and hiding sections using Javascript |-|-|-|</div><p class="note-preview-line note-preview-line-1">|16-10-2018| Crowdfunding questionairre |personal learning| Writing and sending questionairre on apprentices' laptops|-|-|-|</p></li><li class="with-1-preview-lines"><div class="note-preview-title">What do we need to make the project successful</div><p class="note-preview-line note-preview-line-1">How does success look like.</p></li><li class="with-1-preview-lines shared"><div class="note-preview-title">Learning how to learn - Avic ndugu</div><p class="note-preview-line note-preview-line-1">We are always in either Two modes focused mode and diffused modes of thinking.</p></li><li class="with-1-preview-lines"><div class="note-preview-title">## 5 Reasons Why Financial Services Needs Design</div><p class="note-preview-line note-preview-line-1">1. Financial products weren’t designed for poor people.</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">EV3 sensors by Darren Wilson</div><p class="note-preview-line note-preview-line-1">Touch sensors mounted.</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">## Human Centered Design </div><p class="note-preview-line note-preview-line-1">We start with the people and end with solutions that are meant to meet their needs.</p></li><li class="with-1-preview-lines"><div class="note-preview-title">I am working on programming skills through JavaScript.</div><p class="note-preview-line note-preview-line-1">Two JavaScript practice projects to showcase my works.</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">Writing an article/ blogpost</div><p class="note-preview-line note-preview-line-1">[Source](https://blogging.com/blog/how-to-write-good-blog-post/)</p></li><li class="with-1-preview-lines"><div class="note-preview-title">TED TALKS A DAY</div><p class="note-preview-line note-preview-line-1">### **What should I do with my life? | Charlie Parker | TEDxHeriotWattUniversity**</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Make a computer game</div><p class="note-preview-line note-preview-line-1">Learn oop</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">Becoming a Confident Trainer</div><p class="note-preview-line note-preview-line-1">### 7. Step out of your comfort zone</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Learning how to learn - Anwar Magara</div><p class="note-preview-line note-preview-line-1">###What is learning</p></li><li class="with-1-preview-lines"><div class="note-preview-title">Welcome to Simplenote Android!</div><p class="note-preview-line note-preview-line-1">Open this for instructions.</p></li><li class="with-1-preview-lines shared"><div class="note-preview-title">#The Art  of Public Speaking</div><p class="note-preview-line note-preview-line-1">What do you do when you just can't figure something out?</p></li><li class="with-1-preview-lines shared"><div class="note-preview-title">The art of public speaking - Avic Ndugu</div><p class="note-preview-line note-preview-line-1">###**What is Lorem Ipsum?**</p></li><li class="with-1-preview-lines"><div class="note-preview-title">The Art of Public Speaking.</div><p class="note-preview-line note-preview-line-1">Contrary
+ to popular belief, Lorem Ipsum is not simply random text. It has roots 
+in a piece of classical Latin literature from 45 BC, making it over 2000
+ years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+College in Virginia, looked up one of the more obscure Latin words, 
+consectetur, from a Lorem Ipsum passage, and going through the cites of 
+the word in classical literature, discovered the undoubtable source. 
+Lorem Ipsum comes from sections 1.10.32 an</p></li><li class="with-1-preview-lines published"><div class="note-preview-title">Learning How to Learn</div><p class="note-preview-line note-preview-line-1">Topics</p></li><li class="with-1-preview-lines"><div class="note-preview-title">This is my first note.</div><p class="note-preview-line note-preview-line-1">&nbsp;</p></li></ul>
+        </div>
+
+        <div class="tagbar"><ul class="as-selections" id="as-selections-020"><li class="as-original" id="as-original-020"><input id="as-input-020" autocomplete="off" type="text" size="100" class="as-input as-prompt" value="Add tag…"></li></ul><div class="as-results" id="as-results-020" style="display: none;"></div></div>
+
+          <ul class="statusbar">
+            <li><div id="criticalmsg"></div></li>
+            <li><img id="ajaxbusy" style="display:none" src="Simplenote_files/ajax-loader.gif"></li>
+            <li><div id="statusmsg">Saved</div></li>
+          </ul>
+
+        <div class="note">
+            <div id="static_content" style="display: none;"></div>
+          <grammarly-ghost spellcheck="false"><div style="position: absolute; color: transparent; overflow: hidden; white-space: pre-wrap; box-sizing: border-box; height: 1018.75px; width: 1150.25px; z-index: 0; border-width: 0px; border-style: solid; padding: 20px 140px 0px 60px; margin: 4px 0px 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; line-height: 25.2px; top: 0px; left: 0px;" data-id="d0fbd367-9f70-7ddc-5478-c71c308868a0" data-gramm_id="d0fbd367-9f70-7ddc-5478-c71c308868a0" data-gramm="gramm" data-gramm_editor="true" class="gr_ver_2" gramm="true" contenteditable="true"><span style="display: inline-block; color: transparent; overflow: hidden; text-align: left; float: initial; clear: none; box-sizing: border-box; vertical-align: baseline; white-space: pre-wrap; width: 100%; margin: 0px; padding: 0px; border: 0px none; font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen-Sans&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-weight: 400; letter-spacing: normal; text-shadow: none; height: 1019px;"><gr_block style="display: inline;" p="0,32">littlebits.com/<br>https://kano.me/</gr_block></span><br></div></grammarly-ghost><textarea id="txtarea" style="display: block; background: transparent none repeat scroll 0% 0% !important; z-index: auto; position: relative; line-height: 25.2px; font-size: 18px; transition: none 0s ease 0s;" data-gramm="true" data-txt_gramm_id="d0fbd367-9f70-7ddc-5478-c71c308868a0" data-gramm_id="d0fbd367-9f70-7ddc-5478-c71c308868a0" spellcheck="false" data-gramm_editor="true">littlebits.com/
+https://kano.me/</textarea><grammarly-btn><div style="z-index: 2; transform: translate(1120.25px, 992.75px);" class="_1BN1N Kzi1t _2DJZN"><div class="_1HjH7"><div title="Protected by Grammarly" class="_3qe6h">&nbsp;</div></div></div></grammarly-btn>
+          <textarea id="historytxt" readonly="readonly" style="display: none;"></textarea>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="lightbox_hacks" style="display:none;">
+      <a href="#modal_signin_form" id="show_modal_signin_form">Sign in</a>
+      <a href="#publish_success_form" id="show_publish_success_form">Published…</a>
+      <a href="#already_published_form" id="show_already_published_form">Already Published…</a>
+      <a href="#sharenote_form" id="show_sharenote_form">Share Note…</a>
+      <a href="#cannotsharenote_form" id="show_cannotsharenote_form">Share Note…</a>
+      <a href="#unpublished_form" id="show_unpublished_form">Unpublished…</a>
+      <a href="#details_form" id="show_details_form">Details…</a>
+      <a href="#error_form" id="show_error_form">Error…</a>
+      <a href="#old_ie_form" id="show_old_ie_form">Old IE…</a>
+      <a href="#post_install_form" id="show_post_install_form">Great!…</a>
+    </div>
+
+    <div id="message_library" style="display:none;">
+        <div id="msg_network_trouble">Internet disconnected? (Will retry.)</div>
+        <div id="msg_server_trouble">Server trouble. (Will retry.)</div>
+        <div id="msg_unauthorized">Session expired</div>
+        <div id="msg_authentication_failure">Your email address or password seems incorrect. Please try again.</div>
+        <div id="publish_success_form" class="lightbox-contents lightbox-text ajax-form">
+          <h3>Note Published!</h3>
+          <p>Anyone who knows the URL below will be able to view the latest version of this note.</p>
+          <p class="clearfix easy-form">
+            <label title="Published Note URL">URL</label>
+            <span class="input-wrap"><input type="text" readonly="readonly" class="click-focuses fancybox-field" id="publish_success_output"></span>
+         </p>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="OK" role="button"></p>
+        </div>
+        <div id="already_published_form" class="lightbox-contents lightbox-text ajax-form">
+          <h3>People can use this link to see your note.</h3>
+          <div class="clearfix easy-form">
+            <span class="input-wrap"><input type="text" readonly="readonly" class="click-focuses fancybox-field" id="already_published_output"></span>
+          </div>
+          <p class="clearfix easy-form">
+                <span class="input-wrap"><input type="button" id="unshare_note_button" class="button submit modal-dismiss" value="Unpublish" role="button"></span>
+            </p>
+            <p class="center"><input type="button" class="button modal-dismiss submit" value="Done" role="button"></p>
+        </div>
+
+        <div id="unpublished_form" class="lightbox-contents lightbox-text">
+            <h3>Note No Longer Published</h3>
+            <p>This note will not be available by its former published URL any more.</p>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="OK" role="button"></p>
+        </div>
+
+        <div id="error_form" class="lightbox-contents lightbox-text lightbox-error-message">
+            <h3>We're Sorry</h3>
+            <div id="error_form_fillable_contents"></div>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="OK" role="button"></p>
+        </div>
+
+        <div id="sharenote_form" class="lightbox-contents lightbox-form ajax-form">
+            <h3>Add an email address for another Simplenote user as a tag to share a note. You'll both be able to edit it.</h3>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="OK" role="button"></p>
+        </div>
+
+        <div id="cannotsharenote_form" class="lightbox-contents lightbox-form ajax-form">
+            <h3>Cannot Share</h3>
+            <p>This note was created by someone else. Only they can share or publish it.</p>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="OK" role="button"></p>
+        </div>
+
+        <div id="details_form" class="lightbox-contents lightbox-text">
+            <h3>Details</h3>
+            <table border="0">
+                <tbody><tr>
+                    <td><span id="details_wc"></span> Words (approx.)</td>
+                    <td><span id="details_char"></span> Characters</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" value="1" id="details_pinned_chk">
+                            Pinned to Top
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" value="1" id="details_markdown_chk">
+                            Markdown Formatted
+                        </label>
+                    </td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td colspan="2">
+                        <p><small>Pinned notes are listed before other notes.</small>
+                      <br><small>We support <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> extensions.</small></p>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br>
+          <p class="center"><input type="button" class="button modal-dismiss submit" value="Done" role="button"></p>
+        </div><!--details-->
+
+        <div id="old_ie_form" class="lightbox-contents lightbox-text">
+            <h3>A Better Simplenote</h3>
+            <p class="not-ie8">You’re using an out-of-date browser, but not all hope is lost.
+              In four minutes, you can enjoy a faster and better-looking
+            Simplenote!</p>
+            <p class="for-ie8">In four minutes, you can be using a faster, better Simplenote.</p>
+            <p>The fix? A free plugin from Google, called <a href="http://www.google.com/chromeframe" target="_blank">Chrome Frame</a>. It installs in minutes –
+              no admin privileges or restart required.</p>
+            <br>
+            <p class="call center"><a class="button install-cf" href="http://www.google.com/chromeframe" target="_blank">Install Chrome Frame</a></p>
+          <p class="fr"><a href="https://app.simplenote.com/?" class="button install-cf modal-dismiss prevent-default">Done</a></p>
+          <p class=""><a href="#" role="button" class="button no-thanks-cf modal-dismiss">No, Thanks</a></p>
+        </div><!--old-ie-->
+
+        <div id="post_install_form" class="lightbox-contents lightbox-text">
+            <h3>Almost Done!</h3>
+            <p>If <a href="http://www.google.com/chromeframe" target="_blank">Chrome Frame</a> has finished installing,
+              you only need to reload this page to enjoy a better Simplenote!</p>
+            <br>
+
+            <p style="float:right;clear:right;" class="call"><a href="https://app.simplenote.com/?" class="button reload-page">Reload</a></p>
+          <p><input type="button" class="button modal-dismiss" value="Cancel"></p>
+        </div><!--post-install-form-->
+    <div id="modal_signin_form" class="lightbox-contents lightbox-form easy-form"><input type="hidden" id="modal_signin_e" name="email"><p class="spaced explanotext">Your session expired. Please sign in again.</p><p class="clearfix"><label for="modal_signin_user_display">Email</label><span class="input-wrap"><span class="fake-data" id="modal_signin_user_display" title="Simplenote account email"></span></span><span class="clear sizezero">&nbsp;</span></p><p class="clearfix"><label for="modal_signin_p">Password</label><span class="input-wrap"><input type="password" id="modal_signin_p" name="password" title="Simplenote account password" autocomplete="off"></span><span class="clear sizezero">&nbsp;</span></p><p class="submitwrap center"><input type="button" id="modal_signin_submit" class="submit button" value="Continue"></p><p class="warn"></p></div></div>
+
+    <ul class="footer">
+        <li>© 2018 &nbsp;<a href="http://automattic.com/">Automattic</a></li>
+        <div class="footer-right">
+        <li><a class="inactive" href="http://simplenote.com/">Downloads</a></li>
+        <li><a class="inactive" href="http://simplenote.com/contact/">Contact</a></li>
+        <li><a class="inactive" href="http://simplenote.com/blog/">Blog</a></li>
+        <li><a class="inactive" href="http://simplenote.com/developers/">Developers</a></li>
+        <li><a class="inactive" href="http://simplenote.com/terms/">Terms</a></li>
+        <li><a class="inactive" href="http://simplenote.com/privacy/">Privacy</a></li>
+      </div>
+    </ul>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11500121-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $(document).ready(function() {
+    $('#message_library').append('<div id="modal_signin_form" class="lightbox-contents lightbox-form easy-form"><input type=hidden id="modal_signin_e" name="email" /><p class="spaced explanotext">Your session expired. Please sign in again.</p><p class="clearfix"><label for="modal_signin_user_display">Email</label><span class="input-wrap"><span class="fake-data" id="modal_signin_user_display" title="Simplenote account email"></span></span><span class="clear sizezero">&nbsp;</span></p><p class="clearfix"><label for="modal_signin_p">Password</label><span class="input-wrap"><input type=password id="modal_signin_p" name="password" title="Simplenote account password" autocomplete="off" /></span><span class="clear sizezero">&nbsp;</span></p><p class="submitwrap center"><input type=button id="modal_signin_submit" class="submit button" value="Continue" /></p><p class="warn"></p></div>');
+  });
+</script>
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content"></iframe></div></div><grammarly-card><div></div></grammarly-card></html>
