@@ -79,6 +79,7 @@ li a{
     height:60px;
 }
 #navBar {
+    display:block;
     padding-right: 5%;
 }
 #navBar li a {
@@ -89,9 +90,6 @@ li a{
 #navBar a:hover {
     background:#912cee;
     color: #fff;/*#ffc800;*/
-
-    /*border-radius: 30px 0px;*/
-/*    color:#fff;*/
 }
 
 .navigation {
@@ -433,11 +431,10 @@ li a{
 
 
 /***************FOR SMALL SCREENS*****************/
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 900px) {
  
-   /*************END OF SMALL SCREENS NAVIGATION SECTION*************/
+   /************* SMALL SCREENS NAVIGATION SECTION*************/
     li a{
-   
     border:none;
     border-radius: 0;
     }
@@ -450,21 +447,14 @@ li a{
     #menu-bar {
         /*padding-top:10px;*/
         border-radius: 1px;
-        padding:5px 10px;
+        padding:5px 20px;
         float:right;
+        /*transition: 0.5s;*/
+        /*transition-timing-function: ease-in-out;*/
     }
     #menu-bar:after {
         clear: both;
     }
-    /*#menu {
-        display:block;
-        float:right;
-    }
-    #menu img {
-        width:40px;
-        padding: 15px 15px;
-        float:right;
-    }*/
     #navBar {
         position: fixed;
         top:20px;
