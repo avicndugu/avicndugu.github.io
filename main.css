@@ -114,6 +114,11 @@ li a{
     float:right;
     width:80%;
  }
+ .active {
+    background:#912cee;
+    color: #fff;/*#ffc800;*/
+}
+ }
 
 .navigation:after {
     clear:both;

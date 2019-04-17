@@ -34,3 +34,19 @@ document.querySelector('#navBar').addEventListener("click", function(){
 // document.querySelector('go-top').addEventListener("click", function(){
 // 	goingUp();
 // });
+
+// ADDING AN ACTIVE ELEMENT TO THE NAVIGATION ITEMS
+// Get the container element
+var liHolder = document.getElementById("navBar");
+
+// Get all buttons with class="btn" inside the container
+var liItem = liHolder.getElementsByClassName("li-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < liItem.length; i++) {
+  liItem[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
