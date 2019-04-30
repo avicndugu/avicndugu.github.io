@@ -15,14 +15,13 @@
     font-size: 4vw;
     text-align: center;
     text-decoration: overline underline  solid;
-    padding: 0;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
 }
 
-body, div, .row{
+/*body, div, .row{
     margin:0;
-}
+}*/
 li {
     font-family:Impact, Charcoal, sans-serif;
     opacity:1;
@@ -48,6 +47,16 @@ h4 {
     font-size: 20px;
     text-align: center;
 }
+
+#about, #services, #call-to-action, #references, #contacts, #footer {
+    clear:both;
+ }
+
+
+.collumn2 { 
+    width:50%;
+    float:left;
+ }
 
 /**********CUSTOM HEADINGS FOR PORTFOLIO SERVICES AND ABOUT SECTION******/
 /******************NAV BAR SECTION ****************/
@@ -98,16 +107,6 @@ li a{
     height:60px;
     background:#fff; /*#e5f6f5*/
     padding-bottom:15px;
-    /*position:relative;*/
-}
-/*#navCover{
-    position:absolute;
-    top:0;
-    left:0;
-    background: #00a99d;
-    opacity:0.1;
-    width:100%;
-    height:100%;*/
 }
 
 .navBars{
@@ -118,18 +117,12 @@ li a{
     background:#912cee;
     color: #fff;/*#ffc800;*/
 }
- }
-
-.navigation:after {
-    clear:both;
-}
 
 #menu {
     display:none;
     float:right;
 
 }
-
 
 /******************END OF NAV BAR SECTION ****************/
 
@@ -139,7 +132,7 @@ li a{
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center center;
-    height:70vh;
+    height:85vh;
     color:#fff;
     margin:0;
 }
@@ -179,34 +172,19 @@ li a{
 
 /****************** ABOUT ME SECTION **************************/
 #about {
-    display:block;
-    overflow:auto;
-    padding-bottom: 30px;
+    overflow:hidden;
+    /*width:100%;*/
+    padding:30px 20px;
 }
-.row {
-    padding-bottom:20px;
-    margin:0;
-}
-
-.collumn2 { 
-    width:50%;
-    float:left;
- }
-
-.collumn2:after {
-    clear: both;
- }
-
 
 .collumnContainer {
-    max-width: 90%; 
+    max-width: 100%; 
     text-align: left;
     display: block;
     margin-left: 5%;
     margin-right: 5%;
     min-height: 100px;
 }
-
 
     /**************PROGRESS BAR*********************/
 #about-section-1 p {
@@ -246,19 +224,13 @@ li a{
 
 /****************** SERVICES SECTION *********************/
 #services {
-    color:#f0ffff;
-    display:block;
-    overflow:auto;
-    background-color:#912CEE;/* #00a99d;*/
-    padding-bottom: 100px;
-    /*padding-top: 10px;*/
-    margin-bottom: -7.5%;
+    color:#eee;
+    overflow:hidden;
+    background-color:#912CEE;/*#00a99d;*/
+    padding:30px 20px;
+    padding-bottom: 120px;
 }
 
-.collumn2 {
-    float:left;
-    width:50%;
-}
 #services .collumn2 p {
     margin:0;
     text-align: left;
@@ -270,15 +242,20 @@ li a{
 
 }
 #call-to-action{
-    padding-top:50px;
-    width:80%;
     margin:0 auto;
     color:#000;
-    background-color: #fff;
-    padding-bottom: 50px;
-    border:solid 1px #ccc;
-    border-radius: 20px;
     text-align: center;
+
+}
+#call-to-action .container {
+    width:80%;
+    margin:0 auto;
+    padding: 40px 0;
+    position: relative;
+    bottom:80px;
+    background-color: #fff;
+    border-radius: 20px;
+    border:solid 1px #912cee;
 }
 
 #call-to-action button {
@@ -296,23 +273,18 @@ li a{
 /****************** REFERENCES SECTION *********************/
 
 #references {
-    display:block;
-    overflow:auto;
-    padding-bottom:30px;
+    overflow:hidden;
+    padding:0px 20px 30px 20px;
 }
 #references h3 {
     padding-bottom: 20px;
-    padding-top:30px;
-}
-#references .row {
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-top:30px;*/
 }
 #references .column3 {
     float:left;
     width:33.333333%;
 }
-.collumnContainer {
+#references .collumnContainer {
     position:relative;
     max-width: 100%; 
     text-align: left;
@@ -326,16 +298,7 @@ li a{
   margin-right: auto;
 }
 
-/*.over {
-    position:absolute;
-    top:5%;
-    left:0%;
-    background:#00a99d;
-    opacity:0.5;
-    width:100%;
-    height:90%;
-    z-index: 10;
-}*/
+
 .text-over {
     position:absolute;
     top:10%;
@@ -375,16 +338,14 @@ li a{
 .text-over:hover {
     opacity: 1;
 }
-    
-/*.over:hover {
-    opacity:0.1;
-}*/
+
 /******************END OF REFERENCES SECTION *********************/
 /******************CONTACT ME ***********************/
 #contacts {
-    padding-top: 20px;
-    display:block;
-    overflow:auto;
+    padding:30px 20px;
+    /*padding-top: 20px;*/
+    /*display:block;*/
+    overflow:hidden;
 }
 
 #contacts .collumnContainer {
@@ -535,12 +496,12 @@ li a{
         text-align: center;
         background: #912CEE;
 	}
-    .rowCollumn {
+    /*.rowCollumn {*/
         /*background-color: red;*/
-        display:block;
+/*        display:block;
         overflow:auto;
         padding-bottom:30px;
-    }
+    }*/
     .collumn2 {
         width:100%;
     }
