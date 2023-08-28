@@ -1,5 +1,5 @@
 .primary-bg-color-custom {
-  background-color: #fff4e6 !important;
+  background-color: #fff4e6;
 }
 
 .primary-bg-color-dark {
@@ -41,12 +41,6 @@
   background-color: #ffc078;
 }
 
-
-.badge-primary-custom {
-  background-color: transparent;
-  border: 1px solid green;
-}
-
 button.navbar-toggler {
   color: #fff;
 }
@@ -61,7 +55,7 @@ button.navbar-toggler:focus {
 }
 
 .nav-item:hover {
-  background-color: #d9480f;
+  background-color: #2CA16F;
 }
 
 .navbar-brand, .nav-link {
@@ -76,4 +70,9 @@ p {
 }
 .text-big {
   font-size: 1.5rem;
+}
+
+.shadow-custom {
+  box-shadow: -20px -20px #ffc078; /* #2CA16F */
+  border: 1px solid #C6CACC; /*#546977; */ /* #2CA16F */
 }
