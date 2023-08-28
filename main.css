@@ -2,9 +2,15 @@
   background-color: #ffe8cc !important;
 }
 
+.primary-bg-color-dark {
+  background-color: #AF3302 !important;
+  color: #fff;
+}
+
 .primary-color-custom {
   color: #d9480f !important;
 }
+
 .py-6 {
   padding-top: 6em;
   padding-bottom: 6em;
@@ -12,4 +18,31 @@
 
 .link-primary {
 text-decoration: underline !important;
+}
+
+.btn-primary-custom {
+  background-color: #d9480f !important;
+  color: #fff;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e8590c !important;
+  color: #fff;
+}
+
+.btn-outline-primary-custom {
+  border: 1px solid #872600;
+  color: #872600;
+}
+
+.btn-outline-primary-custom:hover {
+  border: 1px solid #872600;
+  color: #111;
+  background-color: #ffc078;
+}
+
+
+.badge-primary-custom {
+  background-color: transparent;
+  border: 1px solid green;
 }
