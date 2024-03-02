@@ -4,30 +4,42 @@
 
 .primary-bg-color-dark {
   background-color: #AF3302;
-  color: #fff;
+  color: #fdfdfc;
+}
+
+body, .bg-white {
+  background-color: #fdfdfc !important;
 }
 
 .primary-color-custom {
   color: #d9480f !important;
 }
 
-.py-6 {
+.py-6, .py-lg-6 {
   padding-top: 6em;
   padding-bottom: 6em;
 }
 
 .link-primary {
-    text-decoration: underline !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 3px;
+}
+
+.link-primary:hover {
+  border-bottom-width: 2px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-primary-custom {
   background-color: #AF3302;
-  color: #fff;
+  color: #fdfdfc;
 }
 
 .btn-primary-custom:hover {
   background-color: #d9480f;
-  color: #fff;
+  color: #fdfdfc;
 }
 
 .btn-outline-primary-custom {
@@ -59,10 +71,10 @@ button.navbar-toggler:focus {
 }
 
 .navbar-brand, .nav-link {
-  color: #fff;
+  color: #fdfdfc;
 }
 .navbar-brand:hover, .nav-link:hover {
-  color: #fff;
+  color: #fdfdfc;
 }
 
 p {
