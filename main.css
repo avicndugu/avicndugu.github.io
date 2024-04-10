@@ -1,9 +1,9 @@
 .primary-bg-color-custom {
-  background-color: #fff4e6;
+  background-color: #EBFCF7;
 }
 
 .primary-bg-color-dark {
-  background-color: #AF3302;
+  background-color: #087f5b;
   color: #fdfdfc;
 }
 
@@ -12,7 +12,7 @@ body, .bg-white {
 }
 
 .primary-color-custom {
-  color: #d9480f !important;
+  color: #C82C4E !important;
 }
 
 .py-6, .py-lg-6 {
@@ -33,24 +33,39 @@ body, .bg-white {
 }
 
 .btn-primary-custom {
-  background-color: #AF3302;
+  background-color: #C82C4E;
   color: #fdfdfc;
+  transition : 600ms;
 }
 
 .btn-primary-custom:hover {
-  background-color: #d9480f;
+  background-color: #0E7556;
+  transform: translateY(-5px);
   color: #fdfdfc;
+
+}
+
+.btn-primary-custom:active {
+  transition : 400ms;
+  transform: translateY(10px);
 }
 
 .btn-outline-primary-custom {
-  border: 1px solid #872600;
-  color: #872600;
+  border: 1px solid #C82C4E;
+  color: #C82C4E;
 }
 
 .btn-outline-primary-custom:hover {
-  border: 1px solid #872600;
-  color: #111;
-  background-color: #ffc078;
+  border: 1px solid #0E7556;
+  color: #fdfdfc;
+  background-color: #0E7556;
+  transition : 600ms;
+  transform: translateY(-5px);
+}
+
+.btn-outline-primary-custom:active {
+  transition : 400ms;
+  transform: translateY(5px);
 }
 
 button.navbar-toggler {
@@ -67,7 +82,8 @@ button.navbar-toggler:focus {
 }
 
 .nav-item:hover {
-  background-color: #2CA16F;
+/*  background-color: #2CA16F;*/
+  background-color: #D6244A;
 }
 
 .navbar-brand, .nav-link {
@@ -85,6 +101,11 @@ p {
 }
 
 .shadow-custom {
-  box-shadow: -20px -20px #ffc078; /* #2CA16F */
-  border: 1px solid #C6CACC; /*#546977; */ /* #2CA16F */
+  box-shadow: -10px -10px #60B79D;
+  border: 1px solid #C6CACC;
+  transition : 400ms;
+}
+
+.shadow-custom:hover {
+  box-shadow: -15px -15px #60B79D;
 }
