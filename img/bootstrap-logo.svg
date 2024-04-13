@@ -22,14 +22,14 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="0.80514706"
-     inkscape:cx="404.89498"
+     inkscape:cx="362.04566"
      inkscape:cy="250.88584"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg832">
+     inkscape:current-layer="g1606">
     <sodipodi:guide
        position="514.89041,151.91118"
        orientation="0,-1"
@@ -110,7 +110,7 @@
      id="g1606"
      transform="translate(0,52.127628)">
     <rect
-       style="fill:#fcffff;fill-rule:evenodd;stroke-width:17.173;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#fcffff;fill-rule:evenodd;stroke-width:17.173;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0"
        id="rect1447"
        width="512"
        height="512"

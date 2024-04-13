@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    fill="none"
-   viewBox="0 0 54 54"
+   viewBox="0 0 512 512"
    version="1.1"
    id="svg11"
    sodipodi:docname="tailwindcss-mark.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   width="54"
-   height="54"
+   width="512"
+   height="512"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,9 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="4.9772727"
-     inkscape:cx="73.534247"
-     inkscape:cy="28.931507"
+     inkscape:zoom="2.4886364"
+     inkscape:cx="131.39726"
+     inkscape:cy="320.65754"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
@@ -33,13 +33,18 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg11">
     <sodipodi:guide
-       position="0.19632887,21.182038"
+       position="0.19632887,479.18204"
        orientation="0,-1"
        id="guide2515"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="-311.34009,256.03057"
+       orientation="0,-1"
+       id="guide16660"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <rect
-     style="fill:#fcffff;fill-rule:evenodd;stroke-width:9.86326;stroke-linecap:round;stroke-linejoin:round"
+     style="fill:#fcffff;fill-opacity:0;fill-rule:evenodd;stroke-width:9.86326;stroke-linecap:round;stroke-linejoin:round"
      id="rect2513"
      width="54"
      height="54"
@@ -48,7 +53,7 @@
   <g
      clip-path="url(#prefix__clip0)"
      id="g4"
-     transform="translate(0,10.72831)">
+     transform="matrix(9.4814815,0,0,9.4814815,0,102.72831)">
     <path
        fill="#38bdf8"
        fill-rule="evenodd"
